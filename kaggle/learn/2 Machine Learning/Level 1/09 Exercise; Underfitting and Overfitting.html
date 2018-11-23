@@ -11782,7 +11782,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Code you have previously used to load data</span>
@@ -11826,6 +11826,26 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Validation MAE: 29,653
+
+Setup complete
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -11838,7 +11858,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_mae</span><span class="p">(</span><span class="n">max_leaf_nodes</span><span class="p">,</span> <span class="n">train_X</span><span class="p">,</span> <span class="n">val_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">,</span> <span class="n">val_y</span><span class="p">):</span>
@@ -11866,7 +11886,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">candidate_max_leaf_nodes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">500</span><span class="p">]</span>
@@ -11890,10 +11910,68 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Max leaf nodes: 5  		 Mean Absolute Error:  35044
+Max leaf nodes: 25  		 Mean Absolute Error:  29016
+Max leaf nodes: 50  		 Mean Absolute Error:  27405
+Max leaf nodes: 100  		 Mean Absolute Error:  27282
+Max leaf nodes: 250  		 Mean Absolute Error:  27893
+Max leaf nodes: 500  		 Mean Absolute Error:  29454
+
+ {5: 35044.51299744237, 25: 29016.41319191076, 50: 27405.930473214907, 100: 27282.50803885739, 250: 27893.822225701646, 500: 29454.18598068598}
+
+ 100 27282.50803885739
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="15ef4214-9944-4354-8ae7-ea6f37ecef61"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#15ef4214-9944-4354-8ae7-ea6f37ecef61');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"outcomeType": 1, "valueTowardsCompletion": 0.5, "interactionType": 1, "learnTutorialId": 120, "questionId": "1_BestTreeSize", "learnToolsVersion": "0.2.6", "failureMessage": "", "exceptionClass": "", "trace": ""}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc33">Correct</span></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The lines below will show you a hint or the solution.</span>
@@ -11902,6 +11980,80 @@ div#notebook {
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="2e3e3635-e5c5-443e-9330-941da0e41ecf"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#2e3e3635-e5c5-443e-9330-941da0e41ecf');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 2, "learnTutorialId": 120, "questionId": "1_BestTreeSize", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#3366cc">Hint:</span> You will call get_mae in the loop. You'll need to map the names of your data structure to the names in get_mae</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="ccf118a1-a11f-45b7-bb26-ee3abf37230e"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#ccf118a1-a11f-45b7-bb26-ee3abf37230e');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 3, "learnTutorialId": 120, "questionId": "1_BestTreeSize", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc99">Solution:</span></p>
+<div class="highlight"><pre><span></span><span class="c1"># Here is a short solution with a dict comprehension.</span>
+<span class="c1"># The lesson gives an example of how to do this with an explicit loop.</span>
+<span class="n">scores</span> <span class="o">=</span> <span class="p">{</span><span class="n">leaf_size</span><span class="p">:</span> <span class="n">get_mae</span><span class="p">(</span><span class="n">leaf_size</span><span class="p">,</span> <span class="n">train_X</span><span class="p">,</span> <span class="n">val_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">,</span> <span class="n">val_y</span><span class="p">)</span> <span class="k">for</span> <span class="n">leaf_size</span> <span class="ow">in</span> <span class="n">candidate_max_leaf_nodes</span><span class="p">}</span>
+<span class="n">best_tree_size</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">scores</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">scores</span><span class="o">.</span><span class="n">get</span><span class="p">)</span>
+</pre></div>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -11917,7 +12069,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Fit the model with best_tree_size. Fill in argument to make optimal size</span>
@@ -11933,10 +12085,48 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="f0f86ef9-b9c0-4824-b24e-0db7ef9cd3ab"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#f0f86ef9-b9c0-4824-b24e-0db7ef9cd3ab');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"outcomeType": 1, "valueTowardsCompletion": 0.5, "interactionType": 1, "learnTutorialId": 120, "questionId": "2_FitModelWithAllData", "learnToolsVersion": "0.2.6", "failureMessage": "", "exceptionClass": "", "trace": ""}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc33">Correct</span></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">step_2</span><span class="o">.</span><span class="n">hint</span><span class="p">()</span>
@@ -11944,6 +12134,81 @@ div#notebook {
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="b7706a8a-7ffe-4244-b735-6ef0bebf9dd8"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#b7706a8a-7ffe-4244-b735-6ef0bebf9dd8');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 2, "learnTutorialId": 120, "questionId": "2_FitModelWithAllData", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#3366cc">Hint:</span> Fit with the ideal value of max_leaf_nodes. In the fit step, use all of the data in the dataset</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="b4f1eb6e-91b1-4213-93c7-abdb1af28fed"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#b4f1eb6e-91b1-4213-93c7-abdb1af28fed');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 3, "learnTutorialId": 120, "questionId": "2_FitModelWithAllData", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc99">Solution:</span></p>
+<div class="highlight"><pre><span></span><span class="c1"># Fit the model with best_tree_size. Fill in argument to make optimal size</span>
+<span class="n">final_model</span> <span class="o">=</span> <span class="n">DecisionTreeRegressor</span><span class="p">(</span><span class="n">max_leaf_nodes</span><span class="o">=</span><span class="n">best_tree_size</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># fit the final model</span>
+<span class="n">final_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+
+</div>
+
+</div>
+
 </div>
 </div>
 

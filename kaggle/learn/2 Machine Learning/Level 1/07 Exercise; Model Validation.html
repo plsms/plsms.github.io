@@ -11783,7 +11783,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Code you have previously used to load data</span>
@@ -11817,6 +11817,26 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>First in-sample predictions: [208500. 181500. 223500. 140000. 250000.]
+Actual target values for those homes: [208500, 181500, 223500, 140000, 250000]
+Setup Complete
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -11831,7 +11851,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import the train_test_split function</span>
@@ -11846,10 +11866,48 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="a0817b28-e3e3-42a9-b0b4-16015661eca0"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#a0817b28-e3e3-42a9-b0b4-16015661eca0');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"outcomeType": 1, "valueTowardsCompletion": 0.25, "interactionType": 1, "learnTutorialId": 119, "questionId": "1_SplitData", "learnToolsVersion": "0.2.6", "failureMessage": "", "exceptionClass": "", "trace": ""}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc33">Correct</span></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The lines below will show you a hint or the solution.</span>
@@ -11858,6 +11916,78 @@ div#notebook {
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="809ebce9-de67-441d-abd2-b11194b3c0c6"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#809ebce9-de67-441d-abd2-b11194b3c0c6');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 2, "learnTutorialId": 119, "questionId": "1_SplitData", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#3366cc">Hint:</span> The function you need to import is part of sklearn. When calling the function, the arguments are X and y. Ensure you set the random_state to 1.</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="20f1052d-305d-488b-af5d-4f3b6293e070"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#20f1052d-305d-488b-af5d-4f3b6293e070');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 3, "learnTutorialId": 119, "questionId": "1_SplitData", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc99">Solution:</span></p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="n">train_x</span><span class="p">,</span> <span class="n">val_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">,</span> <span class="n">val_y</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -11874,7 +12004,7 @@ Set <code>random_state</code> to 1 again when creating the model.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># You imported DecisionTreeRegressor in your last exercise</span>
@@ -11893,10 +12023,62 @@ Set <code>random_state</code> to 1 again when creating the model.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[186500. 184000. 130000.  92000. 164500. 220000. 335000. 144152. 215000.
+ 262000.]
+[186500. 184000. 130000.  92000. 164500. 220000. 335000. 144152. 215000.
+ 262000.]
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="84f8fd04-0039-4a1b-882d-bafb38f099f0"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#84f8fd04-0039-4a1b-882d-bafb38f099f0');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"outcomeType": 1, "valueTowardsCompletion": 0.25, "interactionType": 1, "learnTutorialId": 119, "questionId": "2_FitModelWithTrain", "learnToolsVersion": "0.2.6", "failureMessage": "", "exceptionClass": "", "trace": ""}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc33">Correct</span></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">step_2</span><span class="o">.</span><span class="n">hint</span><span class="p">()</span>
@@ -11904,6 +12086,78 @@ Set <code>random_state</code> to 1 again when creating the model.</p>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="5f4c1ddd-f7ca-4b09-a623-b3c5a4b6653f"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#5f4c1ddd-f7ca-4b09-a623-b3c5a4b6653f');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 2, "learnTutorialId": 119, "questionId": "2_FitModelWithTrain", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#3366cc">Hint:</span> Remember, you fit with training data. You will test with validation data soon</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="ab6fcdbb-e464-48cc-b7a2-44e341a98066"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#ab6fcdbb-e464-48cc-b7a2-44e341a98066');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 3, "learnTutorialId": 119, "questionId": "2_FitModelWithTrain", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc99">Solution:</span></p>
+<div class="highlight"><pre><span></span><span class="n">iowa_model</span> <span class="o">=</span> <span class="n">DecisionTreeRegressor</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">iowa_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">)</span>
+</pre></div>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -11918,7 +12172,7 @@ Set <code>random_state</code> to 1 again when creating the model.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Predict with all validation observations</span>
@@ -11930,10 +12184,48 @@ Set <code>random_state</code> to 1 again when creating the model.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="6e1a410f-186e-4377-a8e9-c0d4cbc2f8d3"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#6e1a410f-186e-4377-a8e9-c0d4cbc2f8d3');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"outcomeType": 1, "valueTowardsCompletion": 0.25, "interactionType": 1, "learnTutorialId": 119, "questionId": "3_ValPreds", "learnToolsVersion": "0.2.6", "failureMessage": "", "exceptionClass": "", "trace": ""}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc33">Correct</span></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">step_3</span><span class="o">.</span><span class="n">hint</span><span class="p">()</span>
@@ -11941,6 +12233,77 @@ Set <code>random_state</code> to 1 again when creating the model.</p>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="4cdc4286-59f3-43c9-9bbd-43ee319d5667"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#4cdc4286-59f3-43c9-9bbd-43ee319d5667');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 2, "learnTutorialId": 119, "questionId": "3_ValPreds", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#3366cc">Hint:</span> Run predict on the right validation data object.</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="1238e53d-9882-4b45-94c8-4cd281dc2412"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#1238e53d-9882-4b45-94c8-4cd281dc2412');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 3, "learnTutorialId": 119, "questionId": "3_ValPreds", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc99">Solution:</span></p>
+<div class="highlight"><pre><span></span><span class="n">val_predictions</span> <span class="o">=</span> <span class="n">iowa_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">val_X</span><span class="p">)</span>
+</pre></div>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -11956,7 +12319,7 @@ Set <code>random_state</code> to 1 again when creating the model.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print the top few validation predictions</span>
@@ -11966,6 +12329,126 @@ Set <code>random_state</code> to 1 again when creating the model.</p>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[186500. 184000. 130000.  92000. 164500. 220000. 335000. 144152. 215000.
+ 262000. 180000. 121000. 175900. 210000. 248900. 131000. 100000. 149350.
+ 235000. 156000. 149900. 265979. 193500. 377500. 100000. 162900. 145000.
+ 180000. 582933. 146000. 140000.  91500. 112500. 113000. 145000. 312500.
+ 110000. 132000. 305000. 128000. 162900. 115000. 110000. 124000. 215200.
+ 180000.  79000. 192000. 282922. 235000. 132000. 325000.  80000. 237000.
+ 208300. 100000. 120500. 162000. 153000. 187000. 185750. 335000. 129000.
+ 124900. 185750. 133700. 127000. 230000. 146800. 157900. 136000. 153575.
+ 335000. 177500. 143000. 202500. 168500. 105000. 305900. 192000. 190000.
+ 140200. 134900. 128950. 213000. 108959. 149500. 190000. 175900. 160000.
+ 250580. 157000. 120500. 147500. 118000. 117000. 110000. 130000. 148500.
+ 148000. 190000. 130500. 127000. 120500. 135000. 168000. 176432. 128000.
+ 147000. 260000. 132000. 129500. 171000. 181134. 227875. 189000. 282922.
+  94750. 185000. 194000. 159000. 279500. 290000. 135000. 299800. 165000.
+ 394432. 135750. 155000. 212000. 310000. 134800.  84000. 122900.  80000.
+ 191000. 755000. 147000. 248000. 106500. 145000. 359100. 145000. 192500.
+ 149000. 252000. 109000. 215000. 220000. 138500. 185000. 185000. 120500.
+ 181000. 173000. 335000.  67000. 149350.  67000. 156000. 119000. 110500.
+ 184000. 147000. 156000. 171000. 177000. 159000. 125000. 105000. 284000.
+ 167500. 200000. 312500. 213000. 135960. 205000. 237000. 107000. 163000.
+ 132500. 155835. 165500. 138500. 257000. 160000. 394617. 281213. 161000.
+ 127500.  88000. 139000.  89500. 132500. 134800. 335000. 248900. 155000.
+ 147000.  86000. 185000. 200000. 180500. 215200. 319900. 105000. 194000.
+ 340000. 256000. 280000. 186500. 105500. 155000. 133500. 255500. 253000.
+ 130000.  92900. 256000. 100000. 755000. 138500. 168500. 112000. 127000.
+ 109008. 197000. 245500. 171900. 162000. 128000. 173000. 132000. 118000.
+ 235128. 118964. 260000. 116000. 185000. 315750. 236500. 140000. 151500.
+ 184000.  84000. 130000. 154000. 205000. 110000. 151500. 123000. 129500.
+ 173900. 181500. 165500. 106500. 184900.  84500. 377500. 118500. 180000.
+ 190000. 208500. 181000.  98000. 157000. 151500.  84000. 139000. 100000.
+ 161750. 165600. 116000. 118500. 187000. 147000. 112000. 132000. 230000.
+ 128000. 147000. 125000. 145000. 151000. 284000. 221000. 140200. 129000.
+ 290000. 105000.  96500. 310000. 140000. 132000. 203000. 221000. 215200.
+ 214000. 139000.  91500. 148000. 155000. 115000. 180000. 165500. 223000.
+ 139000. 179900. 150000. 185000. 163000. 176000. 127000. 227000. 146000.
+  99900. 275000. 180500. 180000. 157000. 186500. 179900. 137500. 219500.
+ 155000. 345000. 197000. 205000. 159000. 159434. 156000. 196000. 252678.
+ 255500. 213000. 150900. 143750. 139000. 260000. 189000. 213250. 207500.
+  80000. 221000. 109500. 155000. 165000. 149350. 204900. 105900. 155000.
+ 176000. 395000. 149700. 147000. 143900. 226700. 176000. 116000. 325300.
+ 133750. 188500. 148500. 284000. 201800.]
+258     231500
+267     179500
+288     122000
+649      84500
+1233    142000
+167     325624
+926     285000
+831     151000
+1237    195000
+426     275000
+487     175000
+375      61000
+1126    174000
+53      385000
+1033    230000
+1022     87000
+1215    125000
+91       98600
+1270    260000
+680     143000
+464     124000
+1416    122500
+730     236500
+994     337500
+383      76000
+992     187000
+531     128000
+742     179000
+798     485000
+432     122500
+         ...  
+1003    136905
+126     128000
+1206    107000
+718     341000
+1195    176000
+815     224900
+503     289000
+935      79900
+640     274000
+90      109900
+925     175000
+830     166000
+262     151000
+765     264132
+589      79500
+399     241000
+148     141000
+336     377426
+368     132000
+556     141000
+78      136500
+650     205950
+880     157000
+821      93000
+35      309000
+1017    187500
+534     178000
+1334    125000
+1369    232000
+628     135000
+Name: SalePrice, Length: 365, dtype: int64
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -11982,7 +12465,7 @@ Set <code>random_state</code> to 1 again when creating the model.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">mean_absolute_error</span>
@@ -11997,10 +12480,59 @@ Set <code>random_state</code> to 1 again when creating the model.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>29652.931506849316
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="e1dc7c40-668d-429c-ba03-2d072d0aa36e"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#e1dc7c40-668d-429c-ba03-2d072d0aa36e');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"outcomeType": 1, "valueTowardsCompletion": 0.25, "interactionType": 1, "learnTutorialId": 119, "questionId": "4_MAE", "learnToolsVersion": "0.2.6", "failureMessage": "", "exceptionClass": "", "trace": ""}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc33">Correct</span></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">step_4</span><span class="o">.</span><span class="n">hint</span><span class="p">()</span>
@@ -12008,6 +12540,77 @@ Set <code>random_state</code> to 1 again when creating the model.</p>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="740f0bd7-9b21-4b3d-9a78-0a952f5404f3"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#740f0bd7-9b21-4b3d-9a78-0a952f5404f3');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 2, "learnTutorialId": 119, "questionId": "4_MAE", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#3366cc">Hint:</span> The order of arguments to mean_absolute_error doesn't matter. Make sure you fit to only the training data in step 2.</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="2c445e8b-9dc3-4a2a-9887-5de4260a2067"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#2c445e8b-9dc3-4a2a-9887-5de4260a2067');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 3, "learnTutorialId": 119, "questionId": "4_MAE", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc99">Solution:</span></p>
+<div class="highlight"><pre><span></span><span class="n">val_mae</span> <span class="o">=</span> <span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">val_predictions</span><span class="p">,</span> <span class="n">val_y</span><span class="p">)</span>
+</pre></div>
+
+</div>
+
+</div>
+
 </div>
 </div>
 

@@ -11784,7 +11784,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -11810,7 +11810,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># save filepath to variable for easier access</span>
@@ -11822,6 +11822,189 @@ div#notebook {
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[2]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Rooms</th>
+      <th>Price</th>
+      <th>Distance</th>
+      <th>Postcode</th>
+      <th>Bedroom2</th>
+      <th>Bathroom</th>
+      <th>Car</th>
+      <th>Landsize</th>
+      <th>BuildingArea</th>
+      <th>YearBuilt</th>
+      <th>Lattitude</th>
+      <th>Longtitude</th>
+      <th>Propertycount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>13580.000000</td>
+      <td>1.358000e+04</td>
+      <td>13580.000000</td>
+      <td>13580.000000</td>
+      <td>13580.000000</td>
+      <td>13580.000000</td>
+      <td>13518.000000</td>
+      <td>13580.000000</td>
+      <td>7130.000000</td>
+      <td>8205.000000</td>
+      <td>13580.000000</td>
+      <td>13580.000000</td>
+      <td>13580.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>2.937997</td>
+      <td>1.075684e+06</td>
+      <td>10.137776</td>
+      <td>3105.301915</td>
+      <td>2.914728</td>
+      <td>1.534242</td>
+      <td>1.610075</td>
+      <td>558.416127</td>
+      <td>151.967650</td>
+      <td>1964.684217</td>
+      <td>-37.809203</td>
+      <td>144.995216</td>
+      <td>7454.417378</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.955748</td>
+      <td>6.393107e+05</td>
+      <td>5.868725</td>
+      <td>90.676964</td>
+      <td>0.965921</td>
+      <td>0.691712</td>
+      <td>0.962634</td>
+      <td>3990.669241</td>
+      <td>541.014538</td>
+      <td>37.273762</td>
+      <td>0.079260</td>
+      <td>0.103916</td>
+      <td>4378.581772</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+      <td>8.500000e+04</td>
+      <td>0.000000</td>
+      <td>3000.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1196.000000</td>
+      <td>-38.182550</td>
+      <td>144.431810</td>
+      <td>249.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>2.000000</td>
+      <td>6.500000e+05</td>
+      <td>6.100000</td>
+      <td>3044.000000</td>
+      <td>2.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>177.000000</td>
+      <td>93.000000</td>
+      <td>1940.000000</td>
+      <td>-37.856822</td>
+      <td>144.929600</td>
+      <td>4380.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>3.000000</td>
+      <td>9.030000e+05</td>
+      <td>9.200000</td>
+      <td>3084.000000</td>
+      <td>3.000000</td>
+      <td>1.000000</td>
+      <td>2.000000</td>
+      <td>440.000000</td>
+      <td>126.000000</td>
+      <td>1970.000000</td>
+      <td>-37.802355</td>
+      <td>145.000100</td>
+      <td>6555.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>3.000000</td>
+      <td>1.330000e+06</td>
+      <td>13.000000</td>
+      <td>3148.000000</td>
+      <td>3.000000</td>
+      <td>2.000000</td>
+      <td>2.000000</td>
+      <td>651.000000</td>
+      <td>174.000000</td>
+      <td>1999.000000</td>
+      <td>-37.756400</td>
+      <td>145.058305</td>
+      <td>10331.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>10.000000</td>
+      <td>9.000000e+06</td>
+      <td>48.100000</td>
+      <td>3977.000000</td>
+      <td>20.000000</td>
+      <td>8.000000</td>
+      <td>10.000000</td>
+      <td>433014.000000</td>
+      <td>44515.000000</td>
+      <td>2018.000000</td>
+      <td>-37.408530</td>
+      <td>145.526350</td>
+      <td>21650.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 

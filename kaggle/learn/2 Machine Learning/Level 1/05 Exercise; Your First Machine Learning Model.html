@@ -11782,7 +11782,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Code you have previously used to load data</span>
@@ -11805,6 +11805,24 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Setup Complete
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -11817,7 +11835,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print the list of columns in the dataset to find the name of the prediction target</span>
@@ -11828,10 +11846,47 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[2]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Index([&#39;Id&#39;, &#39;MSSubClass&#39;, &#39;MSZoning&#39;, &#39;LotFrontage&#39;, &#39;LotArea&#39;, &#39;Street&#39;,
+       &#39;Alley&#39;, &#39;LotShape&#39;, &#39;LandContour&#39;, &#39;Utilities&#39;, &#39;LotConfig&#39;,
+       &#39;LandSlope&#39;, &#39;Neighborhood&#39;, &#39;Condition1&#39;, &#39;Condition2&#39;, &#39;BldgType&#39;,
+       &#39;HouseStyle&#39;, &#39;OverallQual&#39;, &#39;OverallCond&#39;, &#39;YearBuilt&#39;, &#39;YearRemodAdd&#39;,
+       &#39;RoofStyle&#39;, &#39;RoofMatl&#39;, &#39;Exterior1st&#39;, &#39;Exterior2nd&#39;, &#39;MasVnrType&#39;,
+       &#39;MasVnrArea&#39;, &#39;ExterQual&#39;, &#39;ExterCond&#39;, &#39;Foundation&#39;, &#39;BsmtQual&#39;,
+       &#39;BsmtCond&#39;, &#39;BsmtExposure&#39;, &#39;BsmtFinType1&#39;, &#39;BsmtFinSF1&#39;,
+       &#39;BsmtFinType2&#39;, &#39;BsmtFinSF2&#39;, &#39;BsmtUnfSF&#39;, &#39;TotalBsmtSF&#39;, &#39;Heating&#39;,
+       &#39;HeatingQC&#39;, &#39;CentralAir&#39;, &#39;Electrical&#39;, &#39;1stFlrSF&#39;, &#39;2ndFlrSF&#39;,
+       &#39;LowQualFinSF&#39;, &#39;GrLivArea&#39;, &#39;BsmtFullBath&#39;, &#39;BsmtHalfBath&#39;, &#39;FullBath&#39;,
+       &#39;HalfBath&#39;, &#39;BedroomAbvGr&#39;, &#39;KitchenAbvGr&#39;, &#39;KitchenQual&#39;,
+       &#39;TotRmsAbvGrd&#39;, &#39;Functional&#39;, &#39;Fireplaces&#39;, &#39;FireplaceQu&#39;, &#39;GarageType&#39;,
+       &#39;GarageYrBlt&#39;, &#39;GarageFinish&#39;, &#39;GarageCars&#39;, &#39;GarageArea&#39;, &#39;GarageQual&#39;,
+       &#39;GarageCond&#39;, &#39;PavedDrive&#39;, &#39;WoodDeckSF&#39;, &#39;OpenPorchSF&#39;,
+       &#39;EnclosedPorch&#39;, &#39;3SsnPorch&#39;, &#39;ScreenPorch&#39;, &#39;PoolArea&#39;, &#39;PoolQC&#39;,
+       &#39;Fence&#39;, &#39;MiscFeature&#39;, &#39;MiscVal&#39;, &#39;MoSold&#39;, &#39;YrSold&#39;, &#39;SaleType&#39;,
+       &#39;SaleCondition&#39;, &#39;SalePrice&#39;],
+      dtype=&#39;object&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">home_data</span><span class="o">.</span><span class="n">SalePrice</span>
@@ -11842,10 +11897,48 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="48c423ca-60fe-415b-aa32-0511a295f1b0"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#48c423ca-60fe-415b-aa32-0511a295f1b0');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"outcomeType": 1, "valueTowardsCompletion": 0.25, "interactionType": 1, "learnTutorialId": 84, "questionId": "1_SetTarget", "learnToolsVersion": "0.2.6", "failureMessage": "", "exceptionClass": "", "trace": ""}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc33">Correct</span></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The lines below will show you a hint or the solution.</span>
@@ -11854,6 +11947,77 @@ div#notebook {
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="71164a61-b5f3-40c9-b1c4-99fc8896741b"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#71164a61-b5f3-40c9-b1c4-99fc8896741b');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 2, "learnTutorialId": 84, "questionId": "1_SetTarget", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#3366cc">Hint:</span> Use <code>print(home_data.columns)</code>. The column you want is at the end of the list. Use the dot notation to pull out this column from the DataFrame</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="0f275c79-d46c-424a-a38b-6959d9772a56"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#0f275c79-d46c-424a-a38b-6959d9772a56');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 3, "learnTutorialId": 84, "questionId": "1_SetTarget", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc99">Solution:</span></p>
+<div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">home_data</span><span class="o">.</span><span class="n">SalePrice</span>
+</pre></div>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -11882,7 +12046,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create the list of features below</span>
@@ -11898,10 +12062,48 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="b469b58d-c27a-4fd8-8bb5-275180998baa"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#b469b58d-c27a-4fd8-8bb5-275180998baa');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"outcomeType": 1, "valueTowardsCompletion": 0.25, "interactionType": 1, "learnTutorialId": 84, "questionId": "2_SelectPredictionData", "learnToolsVersion": "0.2.6", "failureMessage": "", "exceptionClass": "", "trace": ""}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc33">Correct</span></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">step_2</span><span class="o">.</span><span class="n">hint</span><span class="p">()</span>
@@ -11909,6 +12111,80 @@ div#notebook {
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="1336d428-07c9-4852-afed-c2369d8f616f"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#1336d428-07c9-4852-afed-c2369d8f616f');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 2, "learnTutorialId": 84, "questionId": "2_SelectPredictionData", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#3366cc">Hint:</span> Capitalization and spelling are important when specifying variable names. Use the brackets notation when specifying data for X.</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="0b40ceae-2f2e-478e-8545-fef499da6771"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#0b40ceae-2f2e-478e-8545-fef499da6771');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 3, "learnTutorialId": 84, "questionId": "2_SelectPredictionData", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc99">Solution:</span></p>
+<div class="highlight"><pre><span></span><span class="n">feature_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;LotArea&quot;</span><span class="p">,</span> <span class="s2">&quot;YearBuilt&quot;</span><span class="p">,</span> <span class="s2">&quot;1stFlrSF&quot;</span><span class="p">,</span> <span class="s2">&quot;2ndFlrSF&quot;</span><span class="p">,</span>
+                      <span class="s2">&quot;FullBath&quot;</span><span class="p">,</span> <span class="s2">&quot;BedroomAbvGr&quot;</span><span class="p">,</span> <span class="s2">&quot;TotRmsAbvGrd&quot;</span><span class="p">]</span>
+
+<span class="n">X</span><span class="o">=</span><span class="n">home_data</span><span class="p">[</span><span class="n">feature_names</span><span class="p">]</span>
+</pre></div>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -11924,7 +12200,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Review data</span>
@@ -11941,6 +12217,135 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[7]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>LotArea</th>
+      <th>YearBuilt</th>
+      <th>1stFlrSF</th>
+      <th>2ndFlrSF</th>
+      <th>FullBath</th>
+      <th>BedroomAbvGr</th>
+      <th>TotRmsAbvGrd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>1460.000000</td>
+      <td>1460.000000</td>
+      <td>1460.000000</td>
+      <td>1460.000000</td>
+      <td>1460.000000</td>
+      <td>1460.000000</td>
+      <td>1460.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>10516.828082</td>
+      <td>1971.267808</td>
+      <td>1162.626712</td>
+      <td>346.992466</td>
+      <td>1.565068</td>
+      <td>2.866438</td>
+      <td>6.517808</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>9981.264932</td>
+      <td>30.202904</td>
+      <td>386.587738</td>
+      <td>436.528436</td>
+      <td>0.550916</td>
+      <td>0.815778</td>
+      <td>1.625393</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1300.000000</td>
+      <td>1872.000000</td>
+      <td>334.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>2.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>7553.500000</td>
+      <td>1954.000000</td>
+      <td>882.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>2.000000</td>
+      <td>5.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>9478.500000</td>
+      <td>1973.000000</td>
+      <td>1087.000000</td>
+      <td>0.000000</td>
+      <td>2.000000</td>
+      <td>3.000000</td>
+      <td>6.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>11601.500000</td>
+      <td>2000.000000</td>
+      <td>1391.250000</td>
+      <td>728.000000</td>
+      <td>2.000000</td>
+      <td>3.000000</td>
+      <td>7.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>215245.000000</td>
+      <td>2010.000000</td>
+      <td>4692.000000</td>
+      <td>2065.000000</td>
+      <td>3.000000</td>
+      <td>8.000000</td>
+      <td>14.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -11954,7 +12359,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="k">import</span> <span class="n">DecisionTreeRegressor</span>
@@ -11972,10 +12377,48 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="24bc30a6-7c95-4ec8-8c22-a37d47231dcf"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#24bc30a6-7c95-4ec8-8c22-a37d47231dcf');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"outcomeType": 1, "valueTowardsCompletion": 0.25, "interactionType": 1, "learnTutorialId": 84, "questionId": "3_CreateModel", "learnToolsVersion": "0.2.6", "failureMessage": "", "exceptionClass": "", "trace": ""}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc33">Correct</span></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">step_3</span><span class="o">.</span><span class="n">hint</span><span class="p">()</span>
@@ -11983,6 +12426,79 @@ div#notebook {
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="e622c7fe-95dd-4a7b-a4c7-6792872317d7"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#e622c7fe-95dd-4a7b-a4c7-6792872317d7');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 2, "learnTutorialId": 84, "questionId": "3_CreateModel", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#3366cc">Hint:</span> Include <code>random_state</code> when specifying model. Data is specified when fitting it.</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="f520c868-4212-4459-b2bb-c2920f1d8e49"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#f520c868-4212-4459-b2bb-c2920f1d8e49');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 3, "learnTutorialId": 84, "questionId": "3_CreateModel", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc99">Solution:</span></p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeRegressor</span>
+<span class="n">iowa_model</span> <span class="o">=</span> <span class="n">DecisionTreeRegressor</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">iowa_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -11998,7 +12514,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
@@ -12011,10 +12527,67 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>   LotArea  YearBuilt      ...       BedroomAbvGr  TotRmsAbvGrd
+0     8450       2003      ...                  3             8
+1     9600       1976      ...                  3             6
+2    11250       2001      ...                  3             6
+3     9550       1915      ...                  3             7
+4    14260       2000      ...                  4             9
+
+[5 rows x 7 columns]
+[208500. 181500. 223500. ... 266500. 142125. 147500.]
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="35993c14-3626-41c0-8eda-0b90ff3712b3"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#35993c14-3626-41c0-8eda-0b90ff3712b3');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"outcomeType": 1, "valueTowardsCompletion": 0.25, "interactionType": 1, "learnTutorialId": 84, "questionId": "4_MakePredictions", "learnToolsVersion": "0.2.6", "failureMessage": "", "exceptionClass": "", "trace": ""}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc33">Correct</span></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">step_4</span><span class="o">.</span><span class="n">hint</span><span class="p">()</span>
@@ -12022,6 +12595,77 @@ div#notebook {
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="d3a9bf13-d35f-4959-be7c-952b2b1a71e0"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#d3a9bf13-d35f-4959-be7c-952b2b1a71e0');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 2, "learnTutorialId": 84, "questionId": "4_MakePredictions", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#3366cc">Hint:</span> Use <code>iowa_model.predict</code> with an argument holding the data to predict with.</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="32eb8950-4da9-4b0f-a6a6-228dfd6d2727"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#32eb8950-4da9-4b0f-a6a6-228dfd6d2727');
+parent.postMessage({"jupyterEvent": "custom.exercise_interaction", "data": {"interactionType": 3, "learnTutorialId": 84, "questionId": "4_MakePredictions", "learnToolsVersion": "0.2.6", "valueTowardsCompletion": 0.0, "failureMessage": "", "exceptionClass": "", "trace": "", "outcomeType": 4}}, "*")
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<p><span style="color:#33cc99">Solution:</span></p>
+<div class="highlight"><pre><span></span><span class="n">iowa_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</pre></div>
+
+</div>
+
+</div>
+
 </div>
 </div>
 

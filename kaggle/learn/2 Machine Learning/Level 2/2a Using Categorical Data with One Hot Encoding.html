@@ -11793,7 +11793,7 @@ a fixed set of categories.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Read the data</span>
@@ -11844,13 +11844,43 @@ a fixed set of categories.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_predictors</span><span class="o">.</span><span class="n">dtypes</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[12]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>ExterQual       object
+KitchenQual     object
+2ndFlrSF         int64
+OpenPorchSF      int64
+TotalBsmtSF      int64
+MoSold           int64
+MiscVal          int64
+MSSubClass       int64
+TotRmsAbvGrd     int64
+YrSold           int64
+dtype: object</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -11866,7 +11896,7 @@ a fixed set of categories.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">one_hot_encoded_training_predictors</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">train_predictors</span><span class="p">)</span>
@@ -11893,7 +11923,7 @@ a fixed set of categories.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">cross_val_score</span>
@@ -11903,6 +11933,7 @@ a fixed set of categories.</p>
     <span class="c1"># multiple by -1 to make positive MAE score instead of neg value returned as sklearn convention</span>
     <span class="k">return</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">RandomForestRegressor</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> 
                                 <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> 
+                                <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> 
                                 <span class="n">scoring</span> <span class="o">=</span> <span class="s1">&#39;neg_mean_absolute_error&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 
 <span class="n">predictors_without_categoricals</span> <span class="o">=</span> <span class="n">train_predictors</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">exclude</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;object&#39;</span><span class="p">])</span>
@@ -11919,6 +11950,25 @@ a fixed set of categories.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Mean Absolute Error when Dropping Categoricals: 18417
+Mean Abslute Error with One-Hot Encoding: 18138
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -11932,7 +11982,7 @@ a fixed set of categories.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">one_hot_encoded_training_predictors</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">train_predictors</span><span class="p">)</span>

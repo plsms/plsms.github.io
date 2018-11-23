@@ -11869,7 +11869,7 @@ new_data.columns = original_data.columns</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">RandomForestRegressor</span>
@@ -11904,7 +11904,7 @@ new_data.columns = original_data.columns</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cols_with_missing</span> <span class="o">=</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">X_train</span><span class="o">.</span><span class="n">columns</span> 
@@ -11930,7 +11930,7 @@ new_data.columns = original_data.columns</code></pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Mean Absolute Error from dropping columns with Missing Values:
-17592.520114155253
+17563.029200913243
 </pre>
 </div>
 </div>
@@ -11949,7 +11949,7 @@ new_data.columns = original_data.columns</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.impute</span> <span class="k">import</span> <span class="n">SimpleImputer</span>
@@ -11976,7 +11976,7 @@ new_data.columns = original_data.columns</code></pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Mean Absolute Error from Imputation:
-17694.021118721463
+17703.573515981738
 </pre>
 </div>
 </div>
@@ -11995,7 +11995,7 @@ new_data.columns = original_data.columns</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">imputed_X_train_plus</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -12031,7 +12031,7 @@ new_data.columns = original_data.columns</code></pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Mean Absolute Error from Imputation while Track What Was Imputed:
-17929.28292237443
+17816.149999999998
 </pre>
 </div>
 </div>

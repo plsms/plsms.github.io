@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Fashion &#8211; ANBM</title>
+	<atom:link href="/anbm/category/media-entertainment/fashion/feed/" rel="self" type="application/rss+xml" />
+	<link>/anbm/</link>
+	<description></description>
+	<lastBuildDate>Sun, 11 Jun 2017 23:53:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.0.3</generator>
+
+<image>
+	<url>/anbm/wp-content/uploads/2017/02/cropped-logo_a-1-1-32x32.png</url>
+	<title>Fashion &#8211; ANBM</title>
+	<link>/anbm/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Vogue: EXO’s Sehun Was Louis Vuitton’s Best Dressed Man</title>
+		<link>/anbm/2017/1108/vogue-exos-sehun-was-louis-vuittons-best-dressed-man/</link>
+		<pubDate>Tue, 14 Mar 2017 11:01:01 +0000</pubDate>
+		<dc:creator><![CDATA[Ramen]]></dc:creator>
+				<category><![CDATA[Fashion]]></category>
+		<category><![CDATA[Media & Entertainment]]></category>
+
+		<guid isPermaLink="false">/anbm/?p=1108</guid>
+		<description><![CDATA[Vogue: EXO’s Sehun Was Louis Vuitton’s Best Dressed Man &#160; Vogue: EXO’s Sehun Was Louis Vuitton’s Best Dressed Man]]></description>
+				<content:encoded><![CDATA[<h5 style="text-align: center;"></h5>
+<h3 style="text-align: center;"><a href="http://www.vogue.com/article/paris-fashion-week-fall-2017-louis-vuitton-front-row-sehun" target="_blank">Vogue: EXO’s Sehun Was Louis Vuitton’s Best Dressed Man</a></h3>
+<div class="fitvids-video"><iframe width="1140" height="641" src="https://www.youtube.com/embed/JYIb1uu0cTA?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+<p>&nbsp;</p>
+<h3 style="text-align: center;"><a href="http://www.vogue.com/article/paris-fashion-week-fall-2017-louis-vuitton-front-row-sehun" target="_blank">Vogue: EXO’s Sehun Was Louis Vuitton’s Best Dressed Man</a></h3>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Daisuke Ueda for GQ Taiwan</title>
+		<link>/anbm/2017/948/daisuke-ueda-gq-taiwan/</link>
+		<pubDate>Mon, 13 Mar 2017 23:33:24 +0000</pubDate>
+		<dc:creator><![CDATA[Ramen]]></dc:creator>
+				<category><![CDATA[Fashion]]></category>
+		<category><![CDATA[Media & Entertainment]]></category>
+
+		<guid isPermaLink="false">/anbm/?p=948</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<div class="fitvids-video"><iframe width="1140" height="641" src="https://www.youtube.com/embed/VoLpMKpC36k?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

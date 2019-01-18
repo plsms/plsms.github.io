@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Chinese &#8211; ANBM</title>
+	<atom:link href="/anbm/tag/chinese/feed/" rel="self" type="application/rss+xml" />
+	<link>/anbm/</link>
+	<description></description>
+	<lastBuildDate>Sun, 11 Jun 2017 23:53:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.0.3</generator>
+
+<image>
+	<url>/anbm/wp-content/uploads/2017/02/cropped-logo_a-1-1-32x32.png</url>
+	<title>Chinese &#8211; ANBM</title>
+	<link>/anbm/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Violent protests in Paris after police shoot and kill man</title>
+		<link>/anbm/2017/1209/violent-protests-in-paris-after-police-shoot-and-kill-man/</link>
+		<pubDate>Tue, 28 Mar 2017 20:52:50 +0000</pubDate>
+		<dc:creator><![CDATA[ANBM]]></dc:creator>
+				<category><![CDATA[Community & Culture]]></category>
+		<category><![CDATA[Crime]]></category>
+		<category><![CDATA[Chinese]]></category>
+		<category><![CDATA[Europe]]></category>
+		<category><![CDATA[Police]]></category>
+
+		<guid isPermaLink="false">/anbm/?p=1209</guid>
+		<description><![CDATA[A Chinese man and father of five, Liu Shaoyo, age 56, was shot and killed in his own home by]]></description>
+				<content:encoded><![CDATA[<p>A Chinese man and father of five, Liu Shaoyo, age 56, was shot and killed in his own home by the French police Sunday night. The police reported that they visited Liu&#8217;s residence that night in response to a domestic dispute, and were attacked by him at the door with scissors. One of the officers said he was &#8220;<a href="http://www.bbc.com/news/world-europe-39416804">only saved by his bullet proof vest</a>&#8220;, according to BBC, while his family refutes this account. One of his daughters states that the police had broken down the door and immediately a shot was fired, which killed her father. It is unclear if both sides communicated before the shot or bodycam footage exists.</p>
+<p>The following night, about 150 people held a demonstration in front of the local police station to protest the shooting. The protesters spelled out <a href="http://www.chinadaily.com.cn/world/2017-03/28/content_28702374.htm">&#8220;Opposition to violence&#8221; with candles in French in front of the station</a>. The protest later turned violent, with one car burnt and at least 35 detained after riot police dispersed the crowd with tear gas.</p>
+<p>The Chinese embassy in France has confirmed Liu&#8217;s death and requested a full investigation into the shooting. French policing has been under international scrutiny since February when <a href="https://www.theguardian.com/world/2017/feb/06/french-police-brutality-in-spotlight-again-after-officer-charged-with">police sexually assaulted a young black man in Paris</a>.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

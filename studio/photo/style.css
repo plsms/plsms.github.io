@@ -906,7 +906,7 @@ img {
 
 /* :: Hero Area CSS */
 .hero-area {
-  background-color: transparent;
+  background-color: #232323;
   position: relative;
   z-index: 1;
   overflow: hidden;

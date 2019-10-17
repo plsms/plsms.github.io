@@ -567,7 +567,8 @@ img {
     color: #ffffff; }
     @media only screen and (max-width: 767px) {
       .mainMenu .copywrite-text p {
-        font-size: 14px; } }
+        font-size: 14px; 
+		display: none; } }
   .mainMenu .copywrite-text a {
     font-weight: 100;
     color: #ffffff; }

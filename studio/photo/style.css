@@ -974,7 +974,7 @@ img {
     height: 0;
     bottom: 0;
     left: 0;
-    background-color: #232323;
+    background-color: transparent;
     content: '';
     z-index: 1; }
     @media only screen and (max-width: 767px) {

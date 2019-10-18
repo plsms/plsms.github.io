@@ -961,8 +961,23 @@ img {
     .hero-area .hero-content p {
       color: #ffffff;
       margin-bottom: 30px; }
+	.hero-area .hero-content a {
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms;
+      text-decoration: none;
+      outline: none;
+	  font-size: 17px;
+      color: white;
+	  font-weight: 100; }
+  .hero-area .hero-content a:hover, a:focus {
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms;
+      text-decoration: underline;
+      outline: none;
+      color: white;
+      font-weight: 100; }
     .hero-area .hero-content.aboutUs {
-      height: 1100px; }
+      height: 1000px; }
       @media only screen and (max-width: 767px) {
         .hero-area .hero-content.aboutUs {
           height: auto; } }

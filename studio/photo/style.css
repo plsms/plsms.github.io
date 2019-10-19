@@ -1086,7 +1086,8 @@ img {
     z-index: 1;
     margin-bottom: 50px; }
     .sonar-projects-area .single_gallery_item .gallery-content {
-      padding-top: 30px; }
+      padding-top: 30px; 
+	  display: none; }
       .sonar-projects-area .single_gallery_item .gallery-content h4 {
         margin-bottom: 10px; }
         @media only screen and (max-width: 767px) {
